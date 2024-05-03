@@ -2,18 +2,30 @@
 ***
 
 ## Task
-TODO - What is the problem? And where is the challenge?
+The task was to create  Mastermind is a game composed of 9 pieces of different colors.
+A secret code is then composed of 4 distinct pieces.
 
 ## Description
-TODO - How have you solved the problem?
+Mastermind is a game composed of 9 pieces of different colors.
+A secret code is then composed of 4 distinct pieces.
+
+The player has 10 attempts to find the secret code.
+After each input, the game indicates to the player the number of well placed pieces and the number of misplaced pieces.
+
+Pieces will be '0' '1' '2' '3' '4' '5' '6' '7' '8'.
+
+If the player finds the code, he wins, and the game stops.
+A misplaced piece is a piece that is present in the secret code butthat is not in a good position.
 
 ## Installation
-TODO - How to install your project? npm install? make? make re?
+ There was no installation required for this program at all. this make it a very simple code to run on your terminal 
 
 ## Usage
-TODO - How does it work?
+If the player finds the code, he wins, and the game stops.
+A misplaced piece is a piece that is present in the secret code butthat is not in a good position.
 ```
-./my_project argument1 argument2
+The player has 10 attempts to find the secret code.
+After each input, the game indicates to the player the number of well placed pieces and the number of misplaced pieces.
 ```
 
 ### The Core Team
