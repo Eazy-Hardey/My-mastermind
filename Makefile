@@ -1,21 +1,23 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror
+SRC = my_mastermind.c
+OBJ = $(SRC:.c=.o)
+EXEC = my_mastermind
 
-all: my_mastermind
+.PHONY: all clean fclean re
 
-my_mastermind: main.o mastermind.o
-	$(CC) $(CFLAGS) -o my_mastermind main.o mastermind.o
+all: $(EXEC)
 
-main.o: main.c mastermind.h
-	$(CC) $(CFLAGS) -c main.c
+$(EXEC): $(OBJ)
+	$(CC) $(CFLAGS) $(OBJ) -o $(EXEC)
 
-mastermind.o: mastermind.c mastermind.h
-	$(CC) $(CFLAGS) -c mastermind.c
+$(OBJ): $(SRC)
+	$(CC) $(CFLAGS) -c $(SRC)
 
 clean:
-	rm -f *.o
+	rm -f $(OBJ)
 
 fclean: clean
-	rm -f my_mastermind
+	rm -f $(EXEC)
 
 re: fclean all
